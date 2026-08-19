@@ -726,6 +726,106 @@ svg {
   color: var(--purple-bright);
 }
 
+.demo-access {
+  width: 100%;
+  margin-top: 3px;
+  padding: 16px;
+  border: 1px solid rgba(157, 123, 255, 0.15);
+  border-radius: 15px;
+  background: rgba(116, 78, 222, 0.065);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.demo-access-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #dcd4eb;
+  font-size: 10px;
+  font-weight: 740;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.demo-warmup {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #a99cbf;
+  font-family: var(--font-mono);
+  font-size: 7px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.demo-warmup svg,
+.demo-instruction svg {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 auto;
+  color: var(--purple-bright);
+}
+
+.demo-instruction {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  color: #aaa3b6;
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+.demo-instruction svg {
+  margin-top: 1px;
+}
+
+.demo-instruction strong {
+  color: #d5cede;
+  font-weight: 650;
+}
+
+.demo-credentials {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.demo-credentials span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: 8px;
+  background: rgba(6, 6, 11, 0.28);
+  color: #777182;
+  font-family: var(--font-mono);
+  font-size: 7px;
+}
+
+.demo-credentials code {
+  overflow: hidden;
+  color: #dcd5e7;
+  font-family: inherit;
+  font-size: 7px;
+  text-overflow: ellipsis;
+  user-select: all;
+}
+
+.demo-note {
+  margin: 10px 0 0;
+  color: #756f80;
+  font-size: 8px;
+  line-height: 1.55;
+}
+
 .tech-list {
   display: flex;
   flex-wrap: wrap;
@@ -2123,6 +2223,8 @@ svg {
   .floating-card-bottom { left: -9px; }
 
   .project-highlights li { align-items: flex-start; }
+  .demo-access-topline { align-items: flex-start; flex-direction: column; }
+  .demo-credentials { grid-template-columns: 1fr; }
   .calendar-sidebar { display: none; }
   .calendar-layout { grid-template-columns: 1fr; }
   .browser-address { width: 145px; }

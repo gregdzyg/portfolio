@@ -4,11 +4,13 @@ import {
   ArrowUpRight,
   Braces,
   Check,
+  Clock3,
   Code2,
   Database,
   Layers3,
   LockKeyhole,
   Mail,
+  MousePointerClick,
   Network,
   ServerCog,
   ShieldCheck,
@@ -143,7 +145,9 @@ export default function Home() {
             <Reveal className="hero-meta" delay={0.3}>
               <span>Based in Poland</span>
               <span className="meta-separator" />
-              <span>Open to remote &amp; hybrid</span>
+              <span>Open to remote, hybrid &amp; on-site work</span>
+              <span className="meta-separator" />
+              <span>Willing to relocate</span>
             </Reveal>
           </div>
 
@@ -227,6 +231,35 @@ export default function Home() {
                     <Check aria-hidden="true" /> Encrypted backups and tested recovery
                   </li>
                 </ul>
+
+                <div className="demo-access">
+                  <div className="demo-access-topline">
+                    <span>Demo admin access</span>
+                    <span className="demo-warmup">
+                      <Clock3 aria-hidden="true" /> First load: ~40 sec
+                    </span>
+                  </div>
+                  <p className="demo-instruction">
+                    <MousePointerClick aria-hidden="true" />
+                    <span>
+                      Scroll to the website footer and click the
+                      <strong> “Lash&amp;Brow Atelier by Paulina Tarnowska” </strong>
+                      signature to open the admin sign-in.
+                    </span>
+                  </p>
+                  <div className="demo-credentials" aria-label="Demo credentials">
+                    <span>
+                      Login <code>paula</code>
+                    </span>
+                    <span>
+                      Password <code>TwojeSilneHaslo123!</code>
+                    </span>
+                  </div>
+                  <p className="demo-note">
+                    The free Render backend may need around 40 seconds to wake
+                    up on the first request. The demo uses fictional data only.
+                  </p>
+                </div>
 
                 <div className="tech-list" aria-label="Technologies">
                   <span>Java 21</span>
